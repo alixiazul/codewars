@@ -19,6 +19,15 @@ def test_game_not_yet_finished_2():
     assert is_solved(board) == -1
 
 
+def test_game_not_yet_finished_3():
+    # not yet finished
+    board = [[0, 1, 1],
+             [2, 0, 2],
+             [2, 1, 0]]
+
+    assert is_solved(board) == -1
+
+
 def test_game_winning_row():
     # winning row
     board = [[1, 1, 1],
